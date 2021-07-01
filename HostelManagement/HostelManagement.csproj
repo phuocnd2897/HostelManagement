@@ -17,7 +17,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -132,8 +132,23 @@
     <Reference Include="Bunifu.UI.WinForms.Deprecated, Version=4.1.1.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -145,13 +160,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\AddressAPI.cs" />
     <Compile Include="API\AppAccountAPI.cs" />
     <Compile Include="API\BaseAPI.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="API\CustomerAPI.cs" />
+    <Compile Include="API\FeeAPI.cs" />
+    <Compile Include="API\HostelAPI.cs" />
+    <Compile Include="API\RoomAPI.cs" />
+    <Compile Include="frmHostelDetail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmHostelDetail.Designer.cs">
+      <DependentUpon>frmHostelDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -159,21 +185,68 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRoomDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoomDetail.Designer.cs">
+      <DependentUpon>frmRoomDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomerDetail.Designer.cs">
+      <DependentUpon>frmCustomerDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\RequestModel\AppAccountRequestModel.cs" />
+    <Compile Include="Model\RequestModel\CustomerRequestModel.cs" />
+    <Compile Include="Model\RequestModel\FeeRequestModel.cs" />
+    <Compile Include="Model\RequestModel\HostelRequestModel.cs" />
     <Compile Include="Model\RequestModel\LoginRequsetModel.cs" />
+    <Compile Include="Model\RequestModel\RoomRequestModel.cs" />
     <Compile Include="Model\ResponseModel\AppAccountResponseModel.cs" />
+    <Compile Include="Model\ResponseModel\CustomerResponseModel.cs" />
+    <Compile Include="Model\ResponseModel\District.cs" />
+    <Compile Include="Model\ResponseModel\HostelResponseModel.cs" />
     <Compile Include="Model\ResponseModel\LoginResponseModel.cs" />
+    <Compile Include="Model\ResponseModel\Province.cs" />
+    <Compile Include="Model\ResponseModel\RoomResponseModel.cs" />
+    <Compile Include="Model\ResponseModel\Ward.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="US\CustomerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="US\CustomerControl.Designer.cs">
+      <DependentUpon>CustomerControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="US\HostelControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="US\HostelControl.Designer.cs">
       <DependentUpon>HostelControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="US\RoomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="US\RoomControl.Designer.cs">
+      <DependentUpon>RoomControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmHostelDetail.resx">
+      <DependentUpon>frmHostelDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoomDetail.resx">
+      <DependentUpon>frmRoomDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomerDetail.resx">
+      <DependentUpon>frmCustomerDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -183,8 +256,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="US\CustomerControl.resx">
+      <DependentUpon>CustomerControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="US\HostelControl.resx">
       <DependentUpon>HostelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="US\RoomControl.resx">
+      <DependentUpon>RoomControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -199,6 +278,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\back-button-icon-png-7.jpg" />
+    <Content Include="Image\back_button.png" />
+    <Content Include="Image\bed-hostel-hotel-sign-icon-green-vector-17093992.jpg" />
+    <Content Include="Image\error.png" />
+    <Content Include="Image\file-20200226-24651-1or3uxq.jpg" />
+    <Content Include="Image\hostel-icon-trendy-design-style-isolated-white-background-vector-simple-modern-flat-symbol-web-site-mobile-logo-app-135733075.jpg" />
+    <Content Include="Image\Icons8-Windows-8-Science-Plus-Math.ico" />
+    <Content Include="Image\Rafiqul-Hassan-Blogger-Plus.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
