@@ -16,11 +16,13 @@ namespace HostelManagement
     {
         private CustomerAPI _customerAPI;
         private CustomerResponseModel _customerResponseModel;
-        public frmCustomerDetail(CustomerAPI customerAPI, CustomerResponseModel customerResponseModel = null)
+        private string _roomId;
+        public frmCustomerDetail(CustomerAPI customerAPI, string roomId, CustomerResponseModel customerResponseModel = null)
         {
             InitializeComponent();
             _customerAPI = customerAPI;
             _customerResponseModel = customerResponseModel;
+            _roomId = roomId;
         }
     }
 }

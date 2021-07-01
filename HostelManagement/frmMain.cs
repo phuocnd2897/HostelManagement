@@ -15,8 +15,8 @@ namespace HostelManagement
     public partial class frmMain : Form
     {
         private string _token;
-        private string _hostelId;
-        private string _roomId;
+        private string _hostelId = "";
+        private string _roomId = "";
         private HostelAPI hostelAPI;
         private RoomAPI roomAPI;
         private CustomerAPI customerAPI;
@@ -121,7 +121,13 @@ namespace HostelManagement
                 frmRoomDetailControl.ShowDialog();
                 frmRoomDetailControl.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmRoomDetailControl_FormClosing);
             }
-            
+            else if (pages.PageTitle == "customer")
+            {
+                frmCustomerDetail frmCustomerDetail = new frmCustomerDetail(customerAPI, this._roomId);
+                frmCustomerDetail.ShowDialog();
+                frmCustomerDetail.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCustomerDetail_FormClosing);
+            }
+
         }
         private void frmHostelDetailUserControl_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -132,6 +138,11 @@ namespace HostelManagement
         {
             pages.SetPage("room");
             page_room_load(this._hostelId);
+        }
+        private void frmCustomerDetail_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            pages.SetPage("customer");
+            page_customer_load(this._roomId);
         }
         private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
         {
