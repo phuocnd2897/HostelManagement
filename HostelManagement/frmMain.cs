@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Bunifu.Dataviz.WinForms.BunifuDatavizBasic;
 
 namespace HostelManagement
 {
@@ -21,6 +22,8 @@ namespace HostelManagement
         private RoomAPI roomAPI;
         private CustomerAPI customerAPI;
         private FeeAPI feeAPI;
+        private DashboardAPI dashboardAPI;
+        private DataPoint dataPoint;
         public frmMain(string token)
         {
             InitializeComponent();
@@ -29,6 +32,7 @@ namespace HostelManagement
             this.roomAPI = new RoomAPI(_token);
             this.customerAPI = new CustomerAPI(_token);
             this.feeAPI = new FeeAPI(_token);
+            this.dashboardAPI = new DashboardAPI(_token);
         }
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
@@ -81,14 +85,14 @@ namespace HostelManagement
         {
             tbCustomer.Controls.Clear();
             int x = 0, y = 0;
-            var listRoom = this.customerAPI.GetAllRoom(roomId);
+            var listRoom = this.customerAPI.GetAllCustomer(roomId);
             foreach (var item in listRoom)
             {
-                CustomerControl roomControl = new CustomerControl(item, customerAPI, this);
-                roomControl.Location = new Point(x, y);
-                tbRoom.Controls.Add(roomControl);
-                y += roomControl.Height + 10;
-                roomControl.Click += new EventHandler(roomItem_Click);
+                CustomerControl customerControl = new CustomerControl(item, roomId, customerAPI, this);
+                customerControl.Location = new Point(x, y);
+                tbCustomer.Controls.Add(customerControl);
+                y += customerControl.Height + 10;
+                customerControl.Click += new EventHandler(roomItem_Click);
             }
         }
         private void hostelItem_Click(object sender, EventArgs e)
@@ -163,6 +167,31 @@ namespace HostelManagement
             {
                 page_customer_load(this._roomId);
             }
+        }
+        private void page_dashboard_load()
+        {
+            var result = this.dashboardAPI.CustomerByMonth();
+            dataPoint = new DataPoint(_type.Bunifu_line);
+            Canvas canvas = new Canvas();
+            dataPoint.addLabely("JAN", result[0].ToString());
+            dataPoint.addLabely("FEB", result[1].ToString());
+            dataPoint.addLabely("MAR", result[2].ToString());
+            dataPoint.addLabely("APR", result[3].ToString());
+            dataPoint.addLabely("MAY", result[4].ToString());
+            dataPoint.addLabely("JUNE", result[5].ToString());
+            dataPoint.addLabely("JULY", result[6].ToString());
+            dataPoint.addLabely("AUG", result[7].ToString());
+            dataPoint.addLabely("SEP", result[8].ToString());
+            dataPoint.addLabely("OCT", result[9].ToString());
+            dataPoint.addLabely("NOV", result[10].ToString());
+            dataPoint.addLabely("DEC", result[11].ToString());
+            canvas.addData(dataPoint);
+            bunifuDatavizBasic1.Render(canvas);
+        }
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            pages.SetPage("dashboard");
+            page_dashboard_load();
         }
     }
 }

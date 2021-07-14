@@ -31,19 +31,23 @@ namespace HostelManagement.US
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerControl));
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.pbAvatar = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.lbPhoneNumber = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbNumberOfRoom = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbIdCard = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.lblName = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel7 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel8 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbHoTen = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbBirthDate = new Bunifu.UI.WinForms.BunifuLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.btnDelete = new Bunifu.UI.WinForms.BunifuImageButton();
             this.btnUpdate = new Bunifu.UI.WinForms.BunifuImageButton();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            this.lbSex = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbAddress = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +58,7 @@ namespace HostelManagement.US
             this.bunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel6.Location = new System.Drawing.Point(245, 14);
+            this.bunifuLabel6.Location = new System.Drawing.Point(278, 14);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(56, 15);
@@ -63,36 +67,36 @@ namespace HostelManagement.US
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuPictureBox1
+            // pbAvatar
             // 
-            this.bunifuPictureBox1.AllowFocused = false;
-            this.bunifuPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 0;
-            this.bunifuPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox1.Image")));
-            this.bunifuPictureBox1.IsCircle = true;
-            this.bunifuPictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox1.TabIndex = 27;
-            this.bunifuPictureBox1.TabStop = false;
-            this.bunifuPictureBox1.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
+            this.pbAvatar.AllowFocused = false;
+            this.pbAvatar.AutoSizeHeight = true;
+            this.pbAvatar.BorderRadius = 0;
+            this.pbAvatar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbAvatar.Image = ((System.Drawing.Image)(resources.GetObject("pbAvatar.Image")));
+            this.pbAvatar.IsCircle = true;
+            this.pbAvatar.Location = new System.Drawing.Point(0, 0);
+            this.pbAvatar.Name = "pbAvatar";
+            this.pbAvatar.Size = new System.Drawing.Size(100, 100);
+            this.pbAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAvatar.TabIndex = 27;
+            this.pbAvatar.TabStop = false;
+            this.pbAvatar.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Square;
             // 
-            // bunifuLabel2
+            // lbPhoneNumber
             // 
-            this.bunifuLabel2.AllowParentOverrides = false;
-            this.bunifuLabel2.AutoEllipsis = false;
-            this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel2.Location = new System.Drawing.Point(189, 77);
-            this.bunifuLabel2.Name = "bunifuLabel2";
-            this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(60, 15);
-            this.bunifuLabel2.TabIndex = 24;
-            this.bunifuLabel2.Text = "0906585391";
-            this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbPhoneNumber.AllowParentOverrides = false;
+            this.lbPhoneNumber.AutoEllipsis = false;
+            this.lbPhoneNumber.CursorType = null;
+            this.lbPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbPhoneNumber.Location = new System.Drawing.Point(189, 77);
+            this.lbPhoneNumber.Name = "lbPhoneNumber";
+            this.lbPhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbPhoneNumber.Size = new System.Drawing.Size(60, 15);
+            this.lbPhoneNumber.TabIndex = 24;
+            this.lbPhoneNumber.Text = "0906585391";
+            this.lbPhoneNumber.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbPhoneNumber.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel3
             // 
@@ -109,20 +113,20 @@ namespace HostelManagement.US
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // lbNumberOfRoom
+            // lbIdCard
             // 
-            this.lbNumberOfRoom.AllowParentOverrides = false;
-            this.lbNumberOfRoom.AutoEllipsis = false;
-            this.lbNumberOfRoom.CursorType = null;
-            this.lbNumberOfRoom.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lbNumberOfRoom.Location = new System.Drawing.Point(207, 46);
-            this.lbNumberOfRoom.Name = "lbNumberOfRoom";
-            this.lbNumberOfRoom.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbNumberOfRoom.Size = new System.Drawing.Size(54, 15);
-            this.lbNumberOfRoom.TabIndex = 22;
-            this.lbNumberOfRoom.Text = "191901359";
-            this.lbNumberOfRoom.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbNumberOfRoom.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbIdCard.AllowParentOverrides = false;
+            this.lbIdCard.AutoEllipsis = false;
+            this.lbIdCard.CursorType = null;
+            this.lbIdCard.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbIdCard.Location = new System.Drawing.Point(207, 46);
+            this.lbIdCard.Name = "lbIdCard";
+            this.lbIdCard.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbIdCard.Size = new System.Drawing.Size(54, 15);
+            this.lbIdCard.TabIndex = 22;
+            this.lbIdCard.Text = "191901359";
+            this.lbIdCard.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbIdCard.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // bunifuLabel1
             // 
@@ -155,37 +159,37 @@ namespace HostelManagement.US
             this.lblName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lblName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel7
+            // lbHoTen
             // 
-            this.bunifuLabel7.AllowParentOverrides = false;
-            this.bunifuLabel7.AutoEllipsis = false;
-            this.bunifuLabel7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel7.Location = new System.Drawing.Point(151, 14);
-            this.bunifuLabel7.Name = "bunifuLabel7";
-            this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel7.Size = new System.Drawing.Size(76, 15);
-            this.bunifuLabel7.TabIndex = 29;
-            this.bunifuLabel7.Text = "Nguyễn Văn A";
-            this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbHoTen.AllowParentOverrides = false;
+            this.lbHoTen.AutoEllipsis = false;
+            this.lbHoTen.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbHoTen.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lbHoTen.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbHoTen.Location = new System.Drawing.Point(151, 14);
+            this.lbHoTen.Name = "lbHoTen";
+            this.lbHoTen.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbHoTen.Size = new System.Drawing.Size(76, 15);
+            this.lbHoTen.TabIndex = 29;
+            this.lbHoTen.Text = "Nguyễn Văn A";
+            this.lbHoTen.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbHoTen.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuLabel8
+            // lbBirthDate
             // 
-            this.bunifuLabel8.AllowParentOverrides = false;
-            this.bunifuLabel8.AutoEllipsis = false;
-            this.bunifuLabel8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel8.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel8.Location = new System.Drawing.Point(307, 14);
-            this.bunifuLabel8.Name = "bunifuLabel8";
-            this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel8.Size = new System.Drawing.Size(58, 15);
-            this.bunifuLabel8.TabIndex = 30;
-            this.bunifuLabel8.Text = "02/08/1997";
-            this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.lbBirthDate.AllowParentOverrides = false;
+            this.lbBirthDate.AutoEllipsis = false;
+            this.lbBirthDate.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbBirthDate.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lbBirthDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbBirthDate.Location = new System.Drawing.Point(340, 14);
+            this.lbBirthDate.Name = "lbBirthDate";
+            this.lbBirthDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbBirthDate.Size = new System.Drawing.Size(58, 15);
+            this.lbBirthDate.TabIndex = 30;
+            this.lbBirthDate.Text = "02/08/1997";
+            this.lbBirthDate.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbBirthDate.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // panel1
             // 
@@ -282,24 +286,89 @@ namespace HostelManagement.US
             this.btnUpdate.ZoomSpeed = 10;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // lbSex
+            // 
+            this.lbSex.AllowParentOverrides = false;
+            this.lbSex.AutoEllipsis = false;
+            this.lbSex.CursorType = null;
+            this.lbSex.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbSex.Location = new System.Drawing.Point(470, 14);
+            this.lbSex.Name = "lbSex";
+            this.lbSex.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbSex.Size = new System.Drawing.Size(26, 15);
+            this.lbSex.TabIndex = 33;
+            this.lbSex.Text = "Nam";
+            this.lbSex.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbSex.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel4
+            // 
+            this.bunifuLabel4.AllowParentOverrides = false;
+            this.bunifuLabel4.AutoEllipsis = false;
+            this.bunifuLabel4.CursorType = null;
+            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel4.Location = new System.Drawing.Point(416, 14);
+            this.bunifuLabel4.Name = "bunifuLabel4";
+            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel4.Size = new System.Drawing.Size(48, 15);
+            this.bunifuLabel4.TabIndex = 32;
+            this.bunifuLabel4.Text = "Giới tính:";
+            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lbAddress
+            // 
+            this.lbAddress.AllowParentOverrides = false;
+            this.lbAddress.AutoEllipsis = false;
+            this.lbAddress.CursorType = null;
+            this.lbAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbAddress.Location = new System.Drawing.Point(332, 46);
+            this.lbAddress.Name = "lbAddress";
+            this.lbAddress.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbAddress.Size = new System.Drawing.Size(134, 15);
+            this.lbAddress.TabIndex = 35;
+            this.lbAddress.Text = "Phú Nhuận, Hồ Chí Minh";
+            this.lbAddress.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbAddress.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // bunifuLabel5
+            // 
+            this.bunifuLabel5.AllowParentOverrides = false;
+            this.bunifuLabel5.AutoEllipsis = false;
+            this.bunifuLabel5.CursorType = null;
+            this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel5.Location = new System.Drawing.Point(278, 46);
+            this.bunifuLabel5.Name = "bunifuLabel5";
+            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel5.Size = new System.Drawing.Size(39, 15);
+            this.bunifuLabel5.TabIndex = 34;
+            this.bunifuLabel5.Text = "Địa chỉ:";
+            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // CustomerControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
+            this.Controls.Add(this.lbAddress);
+            this.Controls.Add(this.bunifuLabel5);
+            this.Controls.Add(this.lbSex);
+            this.Controls.Add(this.bunifuLabel4);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.bunifuLabel8);
-            this.Controls.Add(this.bunifuLabel7);
+            this.Controls.Add(this.lbBirthDate);
+            this.Controls.Add(this.lbHoTen);
             this.Controls.Add(this.bunifuLabel6);
-            this.Controls.Add(this.bunifuPictureBox1);
-            this.Controls.Add(this.bunifuLabel2);
+            this.Controls.Add(this.pbAvatar);
+            this.Controls.Add(this.lbPhoneNumber);
             this.Controls.Add(this.bunifuLabel3);
-            this.Controls.Add(this.lbNumberOfRoom);
+            this.Controls.Add(this.lbIdCard);
             this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.lblName);
             this.Name = "CustomerControl";
             this.Size = new System.Drawing.Size(716, 105);
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.CustomerControl_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -309,17 +378,21 @@ namespace HostelManagement.US
         #endregion
 
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
-        private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
+        private Bunifu.UI.WinForms.BunifuPictureBox pbAvatar;
+        private Bunifu.UI.WinForms.BunifuLabel lbPhoneNumber;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
-        private Bunifu.UI.WinForms.BunifuLabel lbNumberOfRoom;
+        private Bunifu.UI.WinForms.BunifuLabel lbIdCard;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuLabel lblName;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel7;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel8;
+        private Bunifu.UI.WinForms.BunifuLabel lbHoTen;
+        private Bunifu.UI.WinForms.BunifuLabel lbBirthDate;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
         private Bunifu.UI.WinForms.BunifuImageButton btnDelete;
         private Bunifu.UI.WinForms.BunifuImageButton btnUpdate;
+        private Bunifu.UI.WinForms.BunifuLabel lbSex;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
+        private Bunifu.UI.WinForms.BunifuLabel lbAddress;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
     }
 }

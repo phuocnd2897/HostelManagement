@@ -137,7 +137,6 @@ namespace HostelManagement
                 try
                 {
                     MultipartFormDataContent multipart = new MultipartFormDataContent();
-                    multipart.Add(new StringContent(this._hostelResponseModel.Id), "Id");
                     multipart.Add(new StringContent(txtHostelName.Text), "Name");
                     multipart.Add(new StringContent(cbWard.SelectedValue.ToString()), "WardId");
                     multipart.Add(new StringContent(txtAddress.Text), "Address");
@@ -156,11 +155,12 @@ namespace HostelManagement
                         }
                         else
                         {
-                            bunifuSnackbar1.Show(this, "Có lỗi xảy ra khi Cập nhật. Vui lòng kiểm tra lại", MessageTypes.Error);
+                            bunifuSnackbar1.Show(this, "Có lỗi xảy ra khi thêm mới. Vui lòng kiểm tra lại", MessageTypes.Error);
                         }
                     }
                     else
                     {
+                        multipart.Add(new StringContent(this._hostelResponseModel.Id), "Id");
                         var result = _hostelAPI.UpdateHostel(multipart);
                         if (result != null)
                         {

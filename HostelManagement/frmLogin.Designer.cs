@@ -30,40 +30,44 @@ namespace HostelManagement
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties57 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties58 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties59 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties60 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties61 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties62 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties63 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties64 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties65 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties66 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties67 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties68 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties69 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties70 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties71 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties72 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties73 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties74 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties75 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties76 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties77 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties78 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties79 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties80 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties81 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties82 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties83 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties84 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties11 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties17 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnSignUp = new Bunifu.Framework.UI.BunifuThinButton2();
             this.slideA = new System.Windows.Forms.Panel();
+            this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.cbSex = new System.Windows.Forms.ComboBox();
+            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.dtBirthDate = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.bunifuLabel9 = new Bunifu.UI.WinForms.BunifuLabel();
             this.txtAddress = new Bunifu.UI.WinForms.BunifuTextBox();
             this.cbWard = new System.Windows.Forms.ComboBox();
@@ -88,10 +92,7 @@ namespace HostelManagement
             this.txtUsername = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
-            this.dtBirthDate = new Bunifu.UI.WinForms.BunifuDatePicker();
-            this.cbSex = new System.Windows.Forms.ComboBox();
-            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel10 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             this.slideA.SuspendLayout();
             this.slideB.SuspendLayout();
             this.SuspendLayout();
@@ -125,6 +126,9 @@ namespace HostelManagement
             this.bunifuThinButton21.Size = new System.Drawing.Size(148, 64);
             this.bunifuThinButton21.TabIndex = 0;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuToolTip1.SetToolTip(this.bunifuThinButton21, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuThinButton21, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuThinButton21, "");
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // bunifuThinButton22
@@ -151,6 +155,9 @@ namespace HostelManagement
             this.bunifuThinButton22.Size = new System.Drawing.Size(148, 64);
             this.bunifuThinButton22.TabIndex = 1;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuToolTip1.SetToolTip(this.bunifuThinButton22, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuThinButton22, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuThinButton22, "");
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // btnSignUp
@@ -177,6 +184,9 @@ namespace HostelManagement
             this.btnSignUp.Size = new System.Drawing.Size(306, 64);
             this.btnSignUp.TabIndex = 2;
             this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuToolTip1.SetToolTip(this.btnSignUp, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnSignUp, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnSignUp, "");
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // slideA
@@ -206,6 +216,96 @@ namespace HostelManagement
             this.slideA.Name = "slideA";
             this.slideA.Size = new System.Drawing.Size(392, 604);
             this.slideA.TabIndex = 3;
+            this.bunifuToolTip1.SetToolTip(this.slideA, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.slideA, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.slideA, "");
+            // 
+            // bunifuLabel10
+            // 
+            this.bunifuLabel10.AllowParentOverrides = false;
+            this.bunifuLabel10.AutoEllipsis = false;
+            this.bunifuLabel10.CursorType = null;
+            this.bunifuLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel10.ForeColor = System.Drawing.Color.Snow;
+            this.bunifuLabel10.Location = new System.Drawing.Point(48, 196);
+            this.bunifuLabel10.Name = "bunifuLabel10";
+            this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel10.Size = new System.Drawing.Size(53, 15);
+            this.bunifuLabel10.TabIndex = 25;
+            this.bunifuLabel10.Text = "Ngày sinh";
+            this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel10, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel10, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel10, "");
+            // 
+            // cbSex
+            // 
+            this.cbSex.BackColor = System.Drawing.Color.White;
+            this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbSex.Font = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.cbSex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cbSex.FormattingEnabled = true;
+            this.cbSex.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
+            this.cbSex.Location = new System.Drawing.Point(205, 219);
+            this.cbSex.Name = "cbSex";
+            this.cbSex.Size = new System.Drawing.Size(147, 23);
+            this.cbSex.TabIndex = 24;
+            this.bunifuToolTip1.SetToolTip(this.cbSex, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.cbSex, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.cbSex, "");
+            this.cbSex.Validated += new System.EventHandler(this.cbSex_Validated);
+            // 
+            // bunifuLabel4
+            // 
+            this.bunifuLabel4.AllowParentOverrides = false;
+            this.bunifuLabel4.AutoEllipsis = false;
+            this.bunifuLabel4.CursorType = null;
+            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLabel4.ForeColor = System.Drawing.Color.Snow;
+            this.bunifuLabel4.Location = new System.Drawing.Point(205, 197);
+            this.bunifuLabel4.Name = "bunifuLabel4";
+            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel4.Size = new System.Drawing.Size(45, 15);
+            this.bunifuLabel4.TabIndex = 23;
+            this.bunifuLabel4.Text = "Giới tính";
+            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel4, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel4, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel4, "");
+            // 
+            // dtBirthDate
+            // 
+            this.dtBirthDate.BackColor = System.Drawing.Color.White;
+            this.dtBirthDate.BorderRadius = 1;
+            this.dtBirthDate.Color = System.Drawing.Color.Silver;
+            this.dtBirthDate.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.dtBirthDate.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.dtBirthDate.DisabledColor = System.Drawing.Color.Gray;
+            this.dtBirthDate.DisplayWeekNumbers = false;
+            this.dtBirthDate.DPHeight = 0;
+            this.dtBirthDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.dtBirthDate.FillDatePicker = false;
+            this.dtBirthDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtBirthDate.ForeColor = System.Drawing.Color.Black;
+            this.dtBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtBirthDate.Icon = ((System.Drawing.Image)(resources.GetObject("dtBirthDate.Icon")));
+            this.dtBirthDate.IconColor = System.Drawing.Color.Gray;
+            this.dtBirthDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.dtBirthDate.LeftTextMargin = 5;
+            this.dtBirthDate.Location = new System.Drawing.Point(48, 214);
+            this.dtBirthDate.MinimumSize = new System.Drawing.Size(4, 32);
+            this.dtBirthDate.Name = "dtBirthDate";
+            this.dtBirthDate.Size = new System.Drawing.Size(128, 32);
+            this.dtBirthDate.TabIndex = 22;
+            this.bunifuToolTip1.SetToolTip(this.dtBirthDate, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.dtBirthDate, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.dtBirthDate, "");
+            this.dtBirthDate.Validated += new System.EventHandler(this.dtBirthDate_Validated);
             // 
             // bunifuLabel9
             // 
@@ -222,6 +322,9 @@ namespace HostelManagement
             this.bunifuLabel9.Text = "Địa chỉ chi tiết";
             this.bunifuLabel9.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel9.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel9, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel9, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel9, "");
             // 
             // txtAddress
             // 
@@ -257,26 +360,26 @@ namespace HostelManagement
             this.txtAddress.Modified = false;
             this.txtAddress.Multiline = false;
             this.txtAddress.Name = "txtAddress";
-            stateProperties57.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties57.FillColor = System.Drawing.Color.Empty;
-            stateProperties57.ForeColor = System.Drawing.Color.Empty;
-            stateProperties57.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAddress.OnActiveState = stateProperties57;
-            stateProperties58.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties58.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties58.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtAddress.OnDisabledState = stateProperties58;
-            stateProperties59.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties59.FillColor = System.Drawing.Color.Empty;
-            stateProperties59.ForeColor = System.Drawing.Color.Empty;
-            stateProperties59.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAddress.OnHoverState = stateProperties59;
-            stateProperties60.BorderColor = System.Drawing.Color.Silver;
-            stateProperties60.FillColor = System.Drawing.Color.White;
-            stateProperties60.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            stateProperties60.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtAddress.OnIdleState = stateProperties60;
+            stateProperties9.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties9.FillColor = System.Drawing.Color.Empty;
+            stateProperties9.ForeColor = System.Drawing.Color.Empty;
+            stateProperties9.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAddress.OnActiveState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties10.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtAddress.OnDisabledState = stateProperties10;
+            stateProperties11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties11.FillColor = System.Drawing.Color.Empty;
+            stateProperties11.ForeColor = System.Drawing.Color.Empty;
+            stateProperties11.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAddress.OnHoverState = stateProperties11;
+            stateProperties12.BorderColor = System.Drawing.Color.Silver;
+            stateProperties12.FillColor = System.Drawing.Color.White;
+            stateProperties12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtAddress.OnIdleState = stateProperties12;
             this.txtAddress.Padding = new System.Windows.Forms.Padding(3);
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -295,8 +398,12 @@ namespace HostelManagement
             this.txtAddress.TextMarginLeft = 3;
             this.txtAddress.TextMarginTop = 0;
             this.txtAddress.TextPlaceholder = "Enter text";
+            this.bunifuToolTip1.SetToolTip(this.txtAddress, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtAddress, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtAddress, "");
             this.txtAddress.UseSystemPasswordChar = false;
             this.txtAddress.WordWrap = true;
+            this.txtAddress.Validated += new System.EventHandler(this.txtAddress_Validated);
             // 
             // cbWard
             // 
@@ -313,6 +420,10 @@ namespace HostelManagement
             this.cbWard.Name = "cbWard";
             this.cbWard.Size = new System.Drawing.Size(305, 23);
             this.cbWard.TabIndex = 19;
+            this.bunifuToolTip1.SetToolTip(this.cbWard, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.cbWard, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.cbWard, "");
+            this.cbWard.Validated += new System.EventHandler(this.cbWard_Validated);
             // 
             // cbDistrict
             // 
@@ -329,7 +440,11 @@ namespace HostelManagement
             this.cbDistrict.Name = "cbDistrict";
             this.cbDistrict.Size = new System.Drawing.Size(305, 23);
             this.cbDistrict.TabIndex = 18;
+            this.bunifuToolTip1.SetToolTip(this.cbDistrict, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.cbDistrict, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.cbDistrict, "");
             this.cbDistrict.SelectedIndexChanged += new System.EventHandler(this.cbDistrict_SelectedIndexChanged);
+            this.cbDistrict.Validated += new System.EventHandler(this.cbDistrict_Validated);
             // 
             // cbProvince
             // 
@@ -346,7 +461,11 @@ namespace HostelManagement
             this.cbProvince.Name = "cbProvince";
             this.cbProvince.Size = new System.Drawing.Size(305, 23);
             this.cbProvince.TabIndex = 17;
+            this.bunifuToolTip1.SetToolTip(this.cbProvince, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.cbProvince, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.cbProvince, "");
             this.cbProvince.SelectedIndexChanged += new System.EventHandler(this.cbProvince_SelectedIndexChanged);
+            this.cbProvince.Validated += new System.EventHandler(this.cbProvince_Validated);
             // 
             // bunifuLabel8
             // 
@@ -363,6 +482,9 @@ namespace HostelManagement
             this.bunifuLabel8.Text = "Email";
             this.bunifuLabel8.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel8.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel8, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel8, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel8, "");
             // 
             // txtEmail
             // 
@@ -398,26 +520,26 @@ namespace HostelManagement
             this.txtEmail.Modified = false;
             this.txtEmail.Multiline = false;
             this.txtEmail.Name = "txtEmail";
-            stateProperties61.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties61.FillColor = System.Drawing.Color.Empty;
-            stateProperties61.ForeColor = System.Drawing.Color.Empty;
-            stateProperties61.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtEmail.OnActiveState = stateProperties61;
-            stateProperties62.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties62.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties62.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtEmail.OnDisabledState = stateProperties62;
-            stateProperties63.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties63.FillColor = System.Drawing.Color.Empty;
-            stateProperties63.ForeColor = System.Drawing.Color.Empty;
-            stateProperties63.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtEmail.OnHoverState = stateProperties63;
-            stateProperties64.BorderColor = System.Drawing.Color.Silver;
-            stateProperties64.FillColor = System.Drawing.Color.White;
-            stateProperties64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            stateProperties64.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtEmail.OnIdleState = stateProperties64;
+            stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties13.FillColor = System.Drawing.Color.Empty;
+            stateProperties13.ForeColor = System.Drawing.Color.Empty;
+            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtEmail.OnActiveState = stateProperties13;
+            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtEmail.OnDisabledState = stateProperties14;
+            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties15.FillColor = System.Drawing.Color.Empty;
+            stateProperties15.ForeColor = System.Drawing.Color.Empty;
+            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtEmail.OnHoverState = stateProperties15;
+            stateProperties16.BorderColor = System.Drawing.Color.Silver;
+            stateProperties16.FillColor = System.Drawing.Color.White;
+            stateProperties16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtEmail.OnIdleState = stateProperties16;
             this.txtEmail.Padding = new System.Windows.Forms.Padding(3);
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -436,8 +558,12 @@ namespace HostelManagement
             this.txtEmail.TextMarginLeft = 3;
             this.txtEmail.TextMarginTop = 0;
             this.txtEmail.TextPlaceholder = "Enter text";
+            this.bunifuToolTip1.SetToolTip(this.txtEmail, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtEmail, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtEmail, "");
             this.txtEmail.UseSystemPasswordChar = false;
             this.txtEmail.WordWrap = true;
+            this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated);
             // 
             // bunifuLabel7
             // 
@@ -454,6 +580,9 @@ namespace HostelManagement
             this.bunifuLabel7.Text = "Phường/ Xã";
             this.bunifuLabel7.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel7.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel7, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel7, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel7, "");
             // 
             // bunifuLabel6
             // 
@@ -470,6 +599,9 @@ namespace HostelManagement
             this.bunifuLabel6.Text = "Quận/ Huyện";
             this.bunifuLabel6.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel6.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel6, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel6, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel6, "");
             // 
             // bunifuLabel5
             // 
@@ -486,6 +618,9 @@ namespace HostelManagement
             this.bunifuLabel5.Text = "Tỉnh/ Thành phố";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel5, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel5, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel5, "");
             // 
             // bunifuLabel3
             // 
@@ -502,6 +637,9 @@ namespace HostelManagement
             this.bunifuLabel3.Text = "Họ tên";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel3, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel3, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel3, "");
             // 
             // bunifuLabel2
             // 
@@ -518,6 +656,9 @@ namespace HostelManagement
             this.bunifuLabel2.Text = "Mật khẩu";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel2, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel2, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel2, "");
             // 
             // bunifuLabel1
             // 
@@ -535,6 +676,9 @@ namespace HostelManagement
             this.bunifuLabel1.Text = "Tên tài khoản";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel1, "");
             // 
             // txtFullName
             // 
@@ -570,26 +714,26 @@ namespace HostelManagement
             this.txtFullName.Modified = false;
             this.txtFullName.Multiline = false;
             this.txtFullName.Name = "txtFullName";
-            stateProperties65.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties65.FillColor = System.Drawing.Color.Empty;
-            stateProperties65.ForeColor = System.Drawing.Color.Empty;
-            stateProperties65.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtFullName.OnActiveState = stateProperties65;
-            stateProperties66.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties66.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties66.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties66.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtFullName.OnDisabledState = stateProperties66;
-            stateProperties67.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties67.FillColor = System.Drawing.Color.Empty;
-            stateProperties67.ForeColor = System.Drawing.Color.Empty;
-            stateProperties67.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtFullName.OnHoverState = stateProperties67;
-            stateProperties68.BorderColor = System.Drawing.Color.Silver;
-            stateProperties68.FillColor = System.Drawing.Color.White;
-            stateProperties68.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            stateProperties68.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtFullName.OnIdleState = stateProperties68;
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtFullName.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtFullName.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtFullName.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.White;
+            stateProperties20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtFullName.OnIdleState = stateProperties20;
             this.txtFullName.Padding = new System.Windows.Forms.Padding(3);
             this.txtFullName.PasswordChar = '\0';
             this.txtFullName.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -608,8 +752,12 @@ namespace HostelManagement
             this.txtFullName.TextMarginLeft = 3;
             this.txtFullName.TextMarginTop = 0;
             this.txtFullName.TextPlaceholder = "Enter text";
+            this.bunifuToolTip1.SetToolTip(this.txtFullName, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtFullName, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtFullName, "");
             this.txtFullName.UseSystemPasswordChar = false;
             this.txtFullName.WordWrap = true;
+            this.txtFullName.Validated += new System.EventHandler(this.txtFullName_Validated);
             // 
             // txtPasswordRegis
             // 
@@ -645,26 +793,26 @@ namespace HostelManagement
             this.txtPasswordRegis.Modified = false;
             this.txtPasswordRegis.Multiline = false;
             this.txtPasswordRegis.Name = "txtPasswordRegis";
-            stateProperties69.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties69.FillColor = System.Drawing.Color.Empty;
-            stateProperties69.ForeColor = System.Drawing.Color.Empty;
-            stateProperties69.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPasswordRegis.OnActiveState = stateProperties69;
-            stateProperties70.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties70.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties70.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPasswordRegis.OnDisabledState = stateProperties70;
-            stateProperties71.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties71.FillColor = System.Drawing.Color.Empty;
-            stateProperties71.ForeColor = System.Drawing.Color.Empty;
-            stateProperties71.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPasswordRegis.OnHoverState = stateProperties71;
-            stateProperties72.BorderColor = System.Drawing.Color.Silver;
-            stateProperties72.FillColor = System.Drawing.Color.White;
-            stateProperties72.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            stateProperties72.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPasswordRegis.OnIdleState = stateProperties72;
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPasswordRegis.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPasswordRegis.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPasswordRegis.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.White;
+            stateProperties24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPasswordRegis.OnIdleState = stateProperties24;
             this.txtPasswordRegis.Padding = new System.Windows.Forms.Padding(3);
             this.txtPasswordRegis.PasswordChar = '*';
             this.txtPasswordRegis.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -683,8 +831,12 @@ namespace HostelManagement
             this.txtPasswordRegis.TextMarginLeft = 3;
             this.txtPasswordRegis.TextMarginTop = 0;
             this.txtPasswordRegis.TextPlaceholder = "Enter text";
+            this.bunifuToolTip1.SetToolTip(this.txtPasswordRegis, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtPasswordRegis, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtPasswordRegis, "");
             this.txtPasswordRegis.UseSystemPasswordChar = false;
             this.txtPasswordRegis.WordWrap = true;
+            this.txtPasswordRegis.Validated += new System.EventHandler(this.txtPasswordRegis_Validated);
             // 
             // txtUsernameRegis
             // 
@@ -720,26 +872,26 @@ namespace HostelManagement
             this.txtUsernameRegis.Modified = false;
             this.txtUsernameRegis.Multiline = false;
             this.txtUsernameRegis.Name = "txtUsernameRegis";
-            stateProperties73.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties73.FillColor = System.Drawing.Color.Empty;
-            stateProperties73.ForeColor = System.Drawing.Color.Empty;
-            stateProperties73.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtUsernameRegis.OnActiveState = stateProperties73;
-            stateProperties74.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties74.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties74.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties74.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtUsernameRegis.OnDisabledState = stateProperties74;
-            stateProperties75.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties75.FillColor = System.Drawing.Color.Empty;
-            stateProperties75.ForeColor = System.Drawing.Color.Empty;
-            stateProperties75.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtUsernameRegis.OnHoverState = stateProperties75;
-            stateProperties76.BorderColor = System.Drawing.Color.Silver;
-            stateProperties76.FillColor = System.Drawing.Color.White;
-            stateProperties76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            stateProperties76.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtUsernameRegis.OnIdleState = stateProperties76;
+            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties25.FillColor = System.Drawing.Color.Empty;
+            stateProperties25.ForeColor = System.Drawing.Color.Empty;
+            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtUsernameRegis.OnActiveState = stateProperties25;
+            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtUsernameRegis.OnDisabledState = stateProperties26;
+            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties27.FillColor = System.Drawing.Color.Empty;
+            stateProperties27.ForeColor = System.Drawing.Color.Empty;
+            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtUsernameRegis.OnHoverState = stateProperties27;
+            stateProperties28.BorderColor = System.Drawing.Color.Silver;
+            stateProperties28.FillColor = System.Drawing.Color.White;
+            stateProperties28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtUsernameRegis.OnIdleState = stateProperties28;
             this.txtUsernameRegis.Padding = new System.Windows.Forms.Padding(3);
             this.txtUsernameRegis.PasswordChar = '\0';
             this.txtUsernameRegis.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -758,8 +910,12 @@ namespace HostelManagement
             this.txtUsernameRegis.TextMarginLeft = 3;
             this.txtUsernameRegis.TextMarginTop = 0;
             this.txtUsernameRegis.TextPlaceholder = "Enter text";
+            this.bunifuToolTip1.SetToolTip(this.txtUsernameRegis, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtUsernameRegis, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtUsernameRegis, "");
             this.txtUsernameRegis.UseSystemPasswordChar = false;
             this.txtUsernameRegis.WordWrap = true;
+            this.txtUsernameRegis.Validated += new System.EventHandler(this.txtUsernameRegis_Validated);
             // 
             // slideB
             // 
@@ -772,6 +928,9 @@ namespace HostelManagement
             this.slideB.Name = "slideB";
             this.slideB.Size = new System.Drawing.Size(392, 639);
             this.slideB.TabIndex = 17;
+            this.bunifuToolTip1.SetToolTip(this.slideB, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.slideB, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.slideB, "");
             // 
             // btnLogin
             // 
@@ -797,6 +956,9 @@ namespace HostelManagement
             this.btnLogin.Size = new System.Drawing.Size(306, 64);
             this.btnLogin.TabIndex = 18;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuToolTip1.SetToolTip(this.btnLogin, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.btnLogin, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.btnLogin, "");
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // bunifuLabel15
@@ -814,6 +976,9 @@ namespace HostelManagement
             this.bunifuLabel15.Text = "Mật khẩu";
             this.bunifuLabel15.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel15.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel15, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel15, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel15, "");
             // 
             // bunifuLabel16
             // 
@@ -830,6 +995,9 @@ namespace HostelManagement
             this.bunifuLabel16.Text = "Tên tài khoản";
             this.bunifuLabel16.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel16.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.SetToolTip(this.bunifuLabel16, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuLabel16, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuLabel16, "");
             // 
             // txtPassword
             // 
@@ -865,26 +1033,26 @@ namespace HostelManagement
             this.txtPassword.Modified = false;
             this.txtPassword.Multiline = false;
             this.txtPassword.Name = "txtPassword";
-            stateProperties77.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties77.FillColor = System.Drawing.Color.Empty;
-            stateProperties77.ForeColor = System.Drawing.Color.Empty;
-            stateProperties77.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnActiveState = stateProperties77;
-            stateProperties78.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties78.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties78.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.OnDisabledState = stateProperties78;
-            stateProperties79.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties79.FillColor = System.Drawing.Color.Empty;
-            stateProperties79.ForeColor = System.Drawing.Color.Empty;
-            stateProperties79.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnHoverState = stateProperties79;
-            stateProperties80.BorderColor = System.Drawing.Color.Silver;
-            stateProperties80.FillColor = System.Drawing.Color.White;
-            stateProperties80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            stateProperties80.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtPassword.OnIdleState = stateProperties80;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtPassword.OnIdleState = stateProperties4;
             this.txtPassword.Padding = new System.Windows.Forms.Padding(3);
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -903,6 +1071,9 @@ namespace HostelManagement
             this.txtPassword.TextMarginLeft = 3;
             this.txtPassword.TextMarginTop = 0;
             this.txtPassword.TextPlaceholder = "Enter text";
+            this.bunifuToolTip1.SetToolTip(this.txtPassword, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtPassword, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtPassword, "");
             this.txtPassword.UseSystemPasswordChar = false;
             this.txtPassword.WordWrap = true;
             // 
@@ -940,26 +1111,26 @@ namespace HostelManagement
             this.txtUsername.Modified = false;
             this.txtUsername.Multiline = false;
             this.txtUsername.Name = "txtUsername";
-            stateProperties81.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties81.FillColor = System.Drawing.Color.Empty;
-            stateProperties81.ForeColor = System.Drawing.Color.Empty;
-            stateProperties81.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtUsername.OnActiveState = stateProperties81;
-            stateProperties82.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties82.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties82.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtUsername.OnDisabledState = stateProperties82;
-            stateProperties83.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties83.FillColor = System.Drawing.Color.Empty;
-            stateProperties83.ForeColor = System.Drawing.Color.Empty;
-            stateProperties83.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtUsername.OnHoverState = stateProperties83;
-            stateProperties84.BorderColor = System.Drawing.Color.Silver;
-            stateProperties84.FillColor = System.Drawing.Color.White;
-            stateProperties84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            stateProperties84.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtUsername.OnIdleState = stateProperties84;
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtUsername.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtUsername.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtUsername.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.Color.White;
+            stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtUsername.OnIdleState = stateProperties8;
             this.txtUsername.Padding = new System.Windows.Forms.Padding(3);
             this.txtUsername.PasswordChar = '\0';
             this.txtUsername.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -978,6 +1149,9 @@ namespace HostelManagement
             this.txtUsername.TextMarginLeft = 3;
             this.txtUsername.TextMarginTop = 0;
             this.txtUsername.TextPlaceholder = "Enter text";
+            this.bunifuToolTip1.SetToolTip(this.txtUsername, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.txtUsername, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.txtUsername, "");
             this.txtUsername.UseSystemPasswordChar = false;
             this.txtUsername.WordWrap = true;
             // 
@@ -995,6 +1169,9 @@ namespace HostelManagement
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator1.Size = new System.Drawing.Size(148, 5);
             this.bunifuSeparator1.TabIndex = 18;
+            this.bunifuToolTip1.SetToolTip(this.bunifuSeparator1, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.bunifuSeparator1, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.bunifuSeparator1, "");
             // 
             // bunifuSnackbar1
             // 
@@ -1065,77 +1242,40 @@ namespace HostelManagement
             this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
-            // dtBirthDate
+            // bunifuToolTip1
             // 
-            this.dtBirthDate.BackColor = System.Drawing.Color.White;
-            this.dtBirthDate.BorderRadius = 1;
-            this.dtBirthDate.Color = System.Drawing.Color.Silver;
-            this.dtBirthDate.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
-            this.dtBirthDate.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
-            this.dtBirthDate.DisabledColor = System.Drawing.Color.Gray;
-            this.dtBirthDate.DisplayWeekNumbers = false;
-            this.dtBirthDate.DPHeight = 0;
-            this.dtBirthDate.FillDatePicker = false;
-            this.dtBirthDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtBirthDate.ForeColor = System.Drawing.Color.Black;
-            this.dtBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtBirthDate.Icon = ((System.Drawing.Image)(resources.GetObject("dtBirthDate.Icon")));
-            this.dtBirthDate.IconColor = System.Drawing.Color.Gray;
-            this.dtBirthDate.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
-            this.dtBirthDate.LeftTextMargin = 5;
-            this.dtBirthDate.Location = new System.Drawing.Point(48, 214);
-            this.dtBirthDate.MinimumSize = new System.Drawing.Size(4, 32);
-            this.dtBirthDate.Name = "dtBirthDate";
-            this.dtBirthDate.Size = new System.Drawing.Size(128, 32);
-            this.dtBirthDate.TabIndex = 22;
-            // 
-            // cbSex
-            // 
-            this.cbSex.BackColor = System.Drawing.Color.White;
-            this.cbSex.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbSex.Font = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.cbSex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.cbSex.FormattingEnabled = true;
-            this.cbSex.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Khác"});
-            this.cbSex.Location = new System.Drawing.Point(205, 219);
-            this.cbSex.Name = "cbSex";
-            this.cbSex.Size = new System.Drawing.Size(147, 23);
-            this.cbSex.TabIndex = 24;
-            // 
-            // bunifuLabel4
-            // 
-            this.bunifuLabel4.AllowParentOverrides = false;
-            this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
-            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel4.ForeColor = System.Drawing.Color.Snow;
-            this.bunifuLabel4.Location = new System.Drawing.Point(205, 197);
-            this.bunifuLabel4.Name = "bunifuLabel4";
-            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(45, 15);
-            this.bunifuLabel4.TabIndex = 23;
-            this.bunifuLabel4.Text = "Giới tính";
-            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuLabel10
-            // 
-            this.bunifuLabel10.AllowParentOverrides = false;
-            this.bunifuLabel10.AutoEllipsis = false;
-            this.bunifuLabel10.CursorType = null;
-            this.bunifuLabel10.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel10.ForeColor = System.Drawing.Color.Snow;
-            this.bunifuLabel10.Location = new System.Drawing.Point(48, 196);
-            this.bunifuLabel10.Name = "bunifuLabel10";
-            this.bunifuLabel10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel10.Size = new System.Drawing.Size(53, 15);
-            this.bunifuLabel10.TabIndex = 25;
-            this.bunifuLabel10.Text = "Ngày sinh";
-            this.bunifuLabel10.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel10.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuToolTip1.Active = true;
+            this.bunifuToolTip1.AlignTextWithTitle = false;
+            this.bunifuToolTip1.AllowAutoClose = false;
+            this.bunifuToolTip1.AllowFading = true;
+            this.bunifuToolTip1.AutoCloseDuration = 5000;
+            this.bunifuToolTip1.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuToolTip1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.bunifuToolTip1.ClickToShowDisplayControl = false;
+            this.bunifuToolTip1.ConvertNewlinesToBreakTags = true;
+            this.bunifuToolTip1.DisplayControl = null;
+            this.bunifuToolTip1.EntryAnimationSpeed = 350;
+            this.bunifuToolTip1.ExitAnimationSpeed = 200;
+            this.bunifuToolTip1.GenerateAutoCloseDuration = false;
+            this.bunifuToolTip1.IconMargin = 6;
+            this.bunifuToolTip1.InitialDelay = 0;
+            this.bunifuToolTip1.Name = "bunifuToolTip1";
+            this.bunifuToolTip1.Opacity = 1D;
+            this.bunifuToolTip1.OverrideToolTipTitles = false;
+            this.bunifuToolTip1.Padding = new System.Windows.Forms.Padding(10);
+            this.bunifuToolTip1.ReshowDelay = 100;
+            this.bunifuToolTip1.ShowAlways = true;
+            this.bunifuToolTip1.ShowBorders = false;
+            this.bunifuToolTip1.ShowIcons = true;
+            this.bunifuToolTip1.ShowShadows = true;
+            this.bunifuToolTip1.Tag = null;
+            this.bunifuToolTip1.TextFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuToolTip1.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuToolTip1.TextMargin = 2;
+            this.bunifuToolTip1.TitleFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.bunifuToolTip1.TitleForeColor = System.Drawing.Color.Black;
+            this.bunifuToolTip1.ToolTipPosition = new System.Drawing.Point(0, 0);
+            this.bunifuToolTip1.ToolTipTitle = null;
             // 
             // frmLogin
             // 
@@ -1195,5 +1335,6 @@ namespace HostelManagement
         private System.Windows.Forms.ComboBox cbSex;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuDatePicker dtBirthDate;
+        private Bunifu.UI.WinForms.BunifuToolTip bunifuToolTip1;
     }
 }

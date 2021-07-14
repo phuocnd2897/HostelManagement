@@ -20,8 +20,12 @@ namespace HostelManagement.API
         {
             try
             {
-                var result = BaseAPI.GetMulti<HostelResponseModel>("Hostel", "GetAll", "", _token).Result;
-                return result;
+                var result = BaseAPI.GetMulti<HostelResponseModel>("Hostel", "GetAll", "", _token);
+                if (result != null)
+                {
+                    return result.Result;
+                }
+                return null;
             }
             catch
             {
@@ -32,8 +36,12 @@ namespace HostelManagement.API
         {
             try
             {
-                var result = BaseAPI.PostWithFile<HostelRequestModel>("Hostel", "", hostelRequestModel, _token).Result;
-                return result;
+                var result = BaseAPI.PostWithFile<HostelRequestModel>("Hostel", "", hostelRequestModel, _token);
+                if (result != null)
+                {
+                    return result.Result;
+                }
+                return null;
             }
             catch 
             {
@@ -44,8 +52,12 @@ namespace HostelManagement.API
         {
             try
             {
-                var result = BaseAPI.PutWithFile<HostelRequestModel>("Hostel", "", hostelRequestModel, _token).Result;
-                return result;
+                var result = BaseAPI.PutWithFile<HostelRequestModel>("Hostel", "", hostelRequestModel, _token);
+                if (result != null)
+                {
+                    return result.Result;
+                }
+                return null;
             }
             catch
             {

@@ -33,8 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Dataviz.WinForms, Version=2.1.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>packages\Bunifu.Dataviz.WinForms.2.1.5\lib\Bunifu.Dataviz.WinForms.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
-      <HintPath>packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.Licensing.dll</HintPath>
+      <HintPath>packages\Bunifu.Dataviz.WinForms.2.1.5\lib\Bunifu.Licensing.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
@@ -164,6 +167,7 @@
     <Compile Include="API\AppAccountAPI.cs" />
     <Compile Include="API\BaseAPI.cs" />
     <Compile Include="API\CustomerAPI.cs" />
+    <Compile Include="API\DashboardAPI.cs" />
     <Compile Include="API\FeeAPI.cs" />
     <Compile Include="API\HostelAPI.cs" />
     <Compile Include="API\RoomAPI.cs" />

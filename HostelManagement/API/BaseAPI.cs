@@ -35,7 +35,7 @@ namespace HostelManagement.API
             }
             return null;
         }
-        public async static Task<List<T>> GetMulti<T>(string ControllerName, string Route, string Param, string token = "") where T : class
+        public async static Task<List<T>> GetMulti<T>(string ControllerName, string Route, string Param, string token = "") 
         {
             using (var client = new HttpClient())
             {
@@ -59,7 +59,7 @@ namespace HostelManagement.API
             }
             return null;
         }
-        public static Task<T> Post<T, K>(string ControllerName, string Route, K item, string token = "") where T : class
+        public static Task<T> Post<T, K>(string ControllerName, string Route, K item, string token = "")
         {
             using (var client = new HttpClient())
             {
@@ -82,7 +82,7 @@ namespace HostelManagement.API
             }
             return null;
         }
-        public static Task<T> PostWithFile<T>(string ControllerName, string Route, MultipartContent newItem, string token = "") where T : class
+        public static Task<T> PostWithFile<T>(string ControllerName, string Route, MultipartContent newItem, string token = "")
         {
             using (var client = new HttpClient())
             {

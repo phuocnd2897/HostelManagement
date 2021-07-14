@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Bunifu.UI.WinForms.BunifuSnackbar;
@@ -68,71 +69,119 @@ namespace HostelManagement
         {
             if (txtUsernameRegis.Text.Trim() == "")
             {
-                MessageBox.Show("Tên tài khoản không được để trống", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                bunifuToolTip1.Show(txtUsernameRegis, "Tên tài khoản không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtUsernameRegis.Focus();
             }
             else if (txtPasswordRegis.Text.Trim() == "")
             {
-                bunifuSnackbar1.Show(this, "Mật khẩu không được để trống", MessageTypes.Warning);
+                bunifuToolTip1.Show(txtPasswordRegis, "Mật khẩu không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtPasswordRegis.Focus();
             }
             else if (txtFullName.Text.Trim() == "")
             {
-                bunifuSnackbar1.Show(this, "Họ và tên không được để trống", MessageTypes.Warning);
+                bunifuToolTip1.Show(txtFullName, "Họ tên không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtFullName.Focus();
             }
-            else if (cbProvince.Text.Trim() == "")
+            else if (dtBirthDate.Text.Trim() == "")
             {
-                bunifuSnackbar1.Show(this, "Họ và tên không được để trống", MessageTypes.Warning);
+                bunifuToolTip1.Show(dtBirthDate, "Ngày sinh không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                dtBirthDate.Focus();
             }
-            else if (cbDistrict.Text.Trim() == "")
+            else if (cbSex.SelectedIndex == -1)
             {
-                bunifuSnackbar1.Show(this, "Tỉnh/ thành phố không được để trống, MessageTypes.Warning");
+                bunifuToolTip1.Show(cbSex, "Giới tính không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                cbSex.Focus();
             }
-            else if (cbWard.Text.Trim() == "")
+            else if (cbProvince.SelectedIndex == -1)
             {
-                bunifuSnackbar1.Show(this, "", MessageTypes.Warning);
+                bunifuToolTip1.Show(cbProvince, "Tỉnh/Thành không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                cbProvince.Focus();
+            }
+            else if (cbDistrict.SelectedIndex == -1)
+            {
+                bunifuToolTip1.Show(cbDistrict, "Quận/Huyện không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                cbDistrict.Focus();
+            }
+            else if (cbWard.SelectedIndex == -1)
+            {
+                bunifuToolTip1.Show(cbWard, "Phường/Xã không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                cbWard.Focus();
             }
             else if (txtAddress.Text.Trim() == "")
             {
-                bunifuSnackbar1.Show(this, "Username is required", MessageTypes.Warning);
+                bunifuToolTip1.Show(txtAddress, "Địa chỉ không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtAddress.Focus();
             }
             else if (txtEmail.Text.Trim() == "")
             {
-                bunifuSnackbar1.Show(this, "Username is required", MessageTypes.Warning);
+                bunifuToolTip1.Show(txtEmail, "Email không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtEmail.Focus();
             }
             else
             {
-                try
+                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+                Match match = regex.Match(txtEmail.Text.Trim());
+                if (!match.Success)
                 {
-                    var result = appAccountAPI.SignUp(new AppAccountRequestModel
-                    {
-                        Username = txtUsernameRegis.Text,
-                        Password = txtPasswordRegis.Text,
-                        FullName = txtFullName.Text,
-                        BirthDate = dtBirthDate.Value,
-                        Sex = cbSex.SelectedIndex + 1,
-                        WardId = int.Parse(cbWard.SelectedValue.ToString()),
-                        Address = txtAddress.Text,
-                        Email = txtEmail.Text
-                    });
-                    if (result != null)
-                    {
-                        bunifuThinButton21_Click(null, null);
-                    }
+                    bunifuToolTip1.Show(txtEmail, "Email không đúng định dạng", "Lỗi sai dữ liệu trống",
+                    Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                    txtEmail.Focus();
                 }
-                catch
+                else
                 {
+                    try
+                    {
+                        var result = appAccountAPI.SignUp(new AppAccountRequestModel
+                        {
+                            Username = txtUsernameRegis.Text.Trim(),
+                            Password = txtPasswordRegis.Text.Trim(),
+                            FullName = txtFullName.Text.Trim(),
+                            BirthDate = dtBirthDate.Value,
+                            Sex = cbSex.SelectedIndex + 1,
+                            WardId = int.Parse(cbWard.SelectedValue.ToString()),
+                            Address = txtAddress.Text.Trim(),
+                            Email = txtEmail.Text.Trim()
+                        });
+                        if (result != null)
+                        {
+                            bunifuSnackbar1.Show(this, "Tạo tài khoản mới thành công", MessageTypes.Success);
+                            bunifuThinButton21_Click(null, null);
+                        }
+                        else
+                        {
+                            bunifuSnackbar1.Show(this, "Tạo tài khoản mới thất bại. Vui vòng kiểm tra lại", MessageTypes.Error);
+                        }
+                    }
+                    catch
+                    {
+                    }
                 }
             }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "")
+            if (txtUsername.Text.Trim() == "")
             {
-                MessageBox.Show("Tên tài khoản không được để trống", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                bunifuToolTip1.Show(txtUsername, "Tên tài khoản không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtUsername.Focus();
             }
-            else if (txtPassword.Text == "")
+            else if (txtPassword.Text.Trim() == "")
             {
-                MessageBox.Show("Mật khẩu không được để trống", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                bunifuToolTip1.Show(txtPassword, "Mật khẩu không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtPassword.Focus();
             }
             else
             {
@@ -140,12 +189,12 @@ namespace HostelManagement
                 {
                     var result = appAccountAPI.Login(new LoginRequsetModel
                     {
-                        Username = txtUsername.Text,
-                        Password = txtPassword.Text
+                        Username = txtUsername.Text.Trim(),
+                        Password = txtPassword.Text.Trim()
                     });
                     if (result == null)
                     {
-                        MessageBox.Show("Tài khoản hoặc mật khẩu không đúng", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        bunifuSnackbar1.Show(this, "Tài khoản hoặc mật khẩu không đúng. Vui vòng kiểm tra lại", MessageTypes.Error);
                     }
                     else
                     {
@@ -154,9 +203,9 @@ namespace HostelManagement
                         this.Hide();
                     }
                 }
-                catch (Exception ex)
+                catch
                 {
-                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    bunifuSnackbar1.Show(this, "Tài khoản hoặc mật khẩu không đúng. Vui vòng kiểm tra lại", MessageTypes.Error);
                 }
             }
         }
@@ -183,6 +232,118 @@ namespace HostelManagement
                 cbWard.DisplayMember = "Name";
                 cbWard.ValueMember = "Id";
                 cbWard.SelectedIndex = 0;
+            }
+        }
+
+        private void txtUsernameRegis_Validated(object sender, EventArgs e)
+        {
+            if (txtUsernameRegis.Text.Trim() == "")
+            {
+                bunifuToolTip1.Show(txtUsernameRegis, "Tên tài khoản không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtUsernameRegis.Focus();
+            }
+        }
+
+        private void txtPasswordRegis_Validated(object sender, EventArgs e)
+        {
+            if (txtPasswordRegis.Text.Trim() == "")
+            {
+                bunifuToolTip1.Show(txtPasswordRegis, "Mật khẩu không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtPasswordRegis.Focus();
+            }
+        }
+
+        private void txtFullName_Validated(object sender, EventArgs e)
+        {
+            if (txtFullName.Text.Trim() == "")
+            {
+                bunifuToolTip1.Show(txtFullName, "Họ tên không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtFullName.Focus();
+            }
+        }
+
+        private void dtBirthDate_Validated(object sender, EventArgs e)
+        {
+            if (dtBirthDate.Text.Trim() == "")
+            {
+                bunifuToolTip1.Show(dtBirthDate, "Ngày sinh không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                dtBirthDate.Focus();
+            }
+        }
+
+        private void cbSex_Validated(object sender, EventArgs e)
+        {
+            if (cbSex.SelectedIndex == -1)
+            {
+                bunifuToolTip1.Show(cbSex, "Giới tính không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                cbSex.Focus();
+            }
+        }
+
+        private void cbProvince_Validated(object sender, EventArgs e)
+        {
+            if (cbProvince.SelectedIndex == -1)
+            {
+                bunifuToolTip1.Show(cbProvince, "Tỉnh/Thành không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                cbProvince.Focus();
+            }
+        }
+
+        private void cbDistrict_Validated(object sender, EventArgs e)
+        {
+            if (cbDistrict.SelectedIndex == -1)
+            {
+                bunifuToolTip1.Show(cbDistrict, "Quận/Huyện không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                cbDistrict.Focus();
+            }
+        }
+
+        private void cbWard_Validated(object sender, EventArgs e)
+        {
+            if (cbWard.SelectedIndex == -1)
+            {
+                bunifuToolTip1.Show(cbWard, "Phường/Xã không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                cbWard.Focus();
+            }
+        }
+
+        private void txtAddress_Validated(object sender, EventArgs e)
+        {
+            if (txtAddress.Text.Trim() == "")
+            {
+                bunifuToolTip1.Show(txtAddress, "Địa chỉ không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtAddress.Focus();
+            }
+            
+        }
+
+        private void txtEmail_Validated(object sender, EventArgs e)
+        {
+            if (txtEmail.Text.Trim() == "")
+            {
+                bunifuToolTip1.Show(txtEmail, "Email không được để trống", "Lỗi dữ liệu trống",
+                Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                txtEmail.Focus();
+            }
+            else
+            {
+                Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+                Match match = regex.Match(txtEmail.Text.Trim());
+                if (!match.Success)
+                {
+                    bunifuToolTip1.Show(txtEmail, "Email không đúng định dạng", "Lỗi sai dữ liệu trống",
+                    Image.FromFile(@"D:\Study\PRN292\Project\HostelManagement\HostelManagement\Image\Paomedia-Small-N-Flat-Sign-warning.ico"));
+                    txtEmail.Focus();
+                }
             }
         }
     }

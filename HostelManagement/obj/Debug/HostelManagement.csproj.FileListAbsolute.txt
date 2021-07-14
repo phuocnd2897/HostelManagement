@@ -124,4 +124,5 @@ D:\Study\PRN292\Project\HostelManagement\HostelManagement\bin\Debug\ru\DevExpres
 D:\Study\PRN292\Project\HostelManagement\HostelManagement\obj\Debug\HostelManagement.frmHostelDetail.resources
 D:\Study\PRN292\Project\HostelManagement\HostelManagement\obj\Debug\HostelManagement.frmRoomDetail.resources
 D:\Study\PRN292\Project\HostelManagement\HostelManagement\obj\Debug\HostelManagement.frmCustomerDetail.resources
-D:\Study\PRN292\Project\HostelManagement\HostelManagement\obj\Debug\HostelManagement.csprojAssemblyReference.cache
+D:\Study\PRN292\Project\HostelManagement\HostelManagement\bin\Debug\Bunifu.Dataviz.WinForms.dll
+D:\Study\PRN292\Project\HostelManagement\HostelManagement\bin\Debug\Bunifu.Dataviz.WinForms.xml

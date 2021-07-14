@@ -29,6 +29,7 @@ namespace HostelManagement.US
 
         private void RoomControl_Load(object sender, EventArgs e)
         {
+            this.Width = this.Parent.Width;
             this.Name = this._roomResponseModel.Id;
             this.lbName.Text = this._roomResponseModel.Name;
             this.lbDescription.Text = this._roomResponseModel.Description;

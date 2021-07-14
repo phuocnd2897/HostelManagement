@@ -180,6 +180,7 @@ namespace HostelManagement
             if (_roomResponseModel != null)
             {
                 this.btnAdd.ButtonText = "Cập nhật";
+                this.txtRoomName.Text = _roomResponseModel.Name;
                 this.txtDescription.Text = _roomResponseModel.Description;
                 this.nmCapacity.Value = _roomResponseModel.Capacity;
                 this.txtPrice.Text = _roomResponseModel.Price.ToString();

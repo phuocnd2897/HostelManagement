@@ -16,13 +16,21 @@ namespace HostelManagement.API
         }
         public List<FeeRequestModel> GetAllFee()
         {
-            var result = BaseAPI.GetMulti<FeeRequestModel>("Fee", "GetAll", "", _token).Result;
-            return result;
+            var result = BaseAPI.GetMulti<FeeRequestModel>("Fee", "GetAll", "", _token);
+            if (result != null)
+            {
+                return result.Result;
+            }
+            return null;
         }
         public FeeRequestModel AddFee(FeeRequestModel feeRequestModel)
         {
-            var result = BaseAPI.Post<FeeRequestModel, FeeRequestModel>("Fee", "", feeRequestModel, _token).Result;
-            return result;
+            var result = BaseAPI.Post<FeeRequestModel, FeeRequestModel>("Fee", "", feeRequestModel, _token);
+            if (result != null)
+            {
+                return result.Result;
+            }
+            return null;
         }
     }
 }
